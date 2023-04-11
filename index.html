@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/letter-c.ico" type="image/x-icon">
+    <title>Programa Encriptación</title>
+    <!--ESTILOS PERZONALIZADO-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--ESTILOS DE BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--SCRIPTS PARA ICONOS-->
+        <script src="https://kit.fontawesome.com/dd402a6ed4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container text-center mt-5">
+        <div class="row">
+
+          <div class="col-md-2">
+            <a href="">
+              <img src="img/alura.png" class="img-fluid float-start" alt="Alura Logo" width="92">
+            </a>
+          </div>
+
+          <div class="col-md-6 p-3">
+            <div style="margin-top: 100px;">
+                <textarea  class="form-control form-control-lg textare" id="text" placeholder="Ingrese el texto aquí" rows="12"></textarea>
+                
+            </div>
+            
+            <p class="text-start mt-3"><i class="fa-solid fa-circle-info"></i> Solo letras minúsculas y sin acentos</p>
+
+            <div class="row">
+                <div class="col-md mb-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn-enc" type="button" id="btn_encriptar">Encriptar <i class="fa-solid fa-lock"></i></button>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="d-grid gap-2">
+                        <button class="btn-des" type="button" id="btn_desencriptar">Desencriptar <i class="fa-solid fa-lock-open"></i></button>
+                    </div>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="col-md-4 rounded-5 mb-5" style="background-color: #fff;">
+            <div id="div_text" class="text-start p-3 d-none">
+              <!--PARRAFO OCULTO-->
+              <p class="fs-5" id="p_texto" style="color: #0a3871;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, autem. Iusto rerum tempora perspiciatis, 
+                animi nulla a cupiditate iste, quidem architecto ipsam excepturi, placeat est! Dicta a rem dolorem saepe
+              </p>
+              <div class="d-grid gap-2 mb-2">
+                <button class="btn-des" type="button" id="btn_copiar">Copiar <i class="fa-regular fa-copy"></i></button>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn-enc" type="button" id="btn_refresh">Recargar <i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            </div>
+            <div id="div_image" class="div_image">
+                <img src="img/Mobile testing-bro.svg" alt="Img" class="image1">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desea encriptar o desencriptar</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--SCRIPT PARA MOSTRAR ALERTAS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!--SCRIPT DE BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!--SCRIPT PERZONALIZADO-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

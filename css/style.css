@@ -1,0 +1,50 @@
+/*CAMBIAR EL COLOR DE TODO EL CUERPO DE LA PAGINA WEB*/
+body{
+    background-color: #f3f5fc !important;
+}
+
+/*PROPIEDADES DEL BOTON ENCRIPTAR*/
+.btn-enc{
+    background: -webkit-gradient(linear, left bottom, left top, from(#1e40af), to(#4c1d95));
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+}
+
+.btn-enc:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#1e40af), to(#4c1d95));
+}
+
+/*PROPIEDADES DEL BOTON DESENCRIPTAR*/
+.btn-des{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0f2fe));
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #1e40af;
+    color: #1e40af;
+}
+
+.btn-des:hover{
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#e0f2fe));
+}
+
+/*PROPIEDADES DEL AREA DE TEXTO*/
+.textare{
+    background-color: #f3f5fc !important;
+    border: none !important;
+    color: w#1e40af !important;
+}
+
+/*OCULTAR IMAGEN EN PANTALLAS CON RESOLUCION MINIMA DE 768 PIXELES*/
+@media screen and (max-width: 768px) {
+    .div_image{
+        padding: 40px 0px 40px;
+    }
+    .image1 {
+      display: none !important;
+    }
+  }
+  
